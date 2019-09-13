@@ -1,0 +1,106 @@
+div {
+    height: 100px;
+    width: 100px;
+    margin: 100px;
+}
+
+.box {
+    background-color: red;
+    transition-duration: 1s;
+    transition-property: background-color, border-radius;
+}
+
+.box:hover {
+    background-color: blue;
+    transition-property: background-color, border-radius;
+    border-radius: 10%;
+}
+
+.skew{
+    background-color: green;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.skew:hover{
+    transform: skewX(20deg);
+}
+
+.scale-up{
+    background-color: dodgerblue;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.scale-up:hover{
+    transform: scale(10,20); /*Info pop up*/
+}
+
+.scale-down{
+    background-color: darkviolet;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.scale-down:hover{
+    transform: scale(.25,.25);
+}
+
+.change-color{
+    background-color: red;
+    transition-property: background-color;
+    animation-name: morph-colors;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+.change-color:hover{
+    animation-name: morph-colors;
+    animation-direction: normal;
+    animation-duration: 8s;
+}
+
+@keyframes morph-colors {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
+
+@keyframes morph-back {
+    0% {
+        background-color: green;
+    }
+
+    25% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
