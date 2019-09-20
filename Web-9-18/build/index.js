@@ -10,7 +10,13 @@ function getRandomNumber(min, max) {
     return Math.round(Math.random() * (max - min)) + min;
 }
 var myFunction = function () {
+    getElement("a").value = getRandomNumber(1, 1000).toString();
+    getElement("b").value = getRandomNumber(1, 1000).toString();
 };
 function compute() {
+    var a = getElement("a").valueAsNumber || 0;
+    var b = getElement("b").valueAsNumber || 0;
+    var answer = getElement("answer");
+    answer.innerText = "" + (a + b);
 }
 //# sourceMappingURL=index.js.map

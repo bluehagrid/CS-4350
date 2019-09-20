@@ -12,9 +12,16 @@ function getRandomNumber(min: number, max: number): number {
 }
 
 const myFunction = () => {
+    getElement<HTMLInputElement>("a").value = getRandomNumber(1,1000).toString()
+    getElement<HTMLInputElement>("b").value = getRandomNumber(1,1000).toString()
 
 }
 
 function compute() {
+    const a = getElement<HTMLInputElement>("a").valueAsNumber || 0;
+    const b = getElement<HTMLInputElement>("b").valueAsNumber || 0;
 
+    const answer = getElement<HTMLSpanElement>("answer");
+
+    answer.innerText = `${a + b}`;
 }
