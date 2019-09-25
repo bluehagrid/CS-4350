@@ -1,3 +1,2 @@
-Web-9-18/node_modules/
-**/node_modules/**/*
+**/node_modules/*
 **/build/*
