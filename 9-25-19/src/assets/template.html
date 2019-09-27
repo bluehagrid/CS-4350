@@ -1,6 +1,72 @@
 <html>
     <head>
         <title>Canvas and Events</title>
+        <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .canvas{
+            margin-right: 10px;
+        }
+
+        .color-container{
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-around;
+            height: 75px;
+            width: 80px;
+            padding-right: 20px;
+        }
+
+        .color-container > div{
+            width: 20px;
+            height: 20px;
+            margin: 3px;
+        }
+
+        #green{
+            background-color: green;
+        }
+
+        #blue{
+            background-color: blue;
+        }
+
+        #red{
+            background-color: red;
+        }
+
+        #yellow{
+            background-color: yellow;
+        }
+
+        #orange{
+            background-color: orange;
+        }
+
+        #black{
+            background-color: black;
+        }
+
+        #white{
+            background-color: white;
+            border: 2px solid;
+            width: 20px;
+            height: 20px;
+            margin: 7px 3px 3px 3px;
+        }
+
+        img {
+            margin-left: 10px;
+        }
+
+        canvas {
+            border: 2px solid;
+        }
+
+        </style>
     </head>
     <body class="container">
         <div clas="canvas">
