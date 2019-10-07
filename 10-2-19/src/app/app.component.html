@@ -1,12 +1,12 @@
 <ul class="pages">
   <li class="chat page">
     <div class="chatArea">
-      <ul class="messages">
+      <ul class="messages" #messages>
         <ng-container *ngIf="allMessages.length">
           <li *ngFor="let mesasge of allMessages" [app-message]="message"></li>
         </ng-container>
       </ul>
     </div>
-    <input class="inputMessage" placeholder="Type here..." [(ngModel)]="message">
+    <input #inputMessage class="inputMessage" placeholder="Type here..." [(ngModel)]="message" (click)="inputMessageClick($event)">
   </li>
 </ul>
