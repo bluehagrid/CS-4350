@@ -21,7 +21,7 @@ export class MessageComponent implements OnInit {
   public message: string;
   public username: string;
 
-  constructor() { }
+ 
 
   public ngOnInit() {
     this.isLog = this.appMessage.isLog;
