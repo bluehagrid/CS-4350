@@ -21,7 +21,7 @@ export class AppComponent {
   private isConnected = false;
 
   constructor(){
-    this.io = socket('https://cs4350sockets.herokuapp.com');
+    this.io = socket('http://localhost:3000');
     this.username = 'JacobJackson'
     this.setUpListeners();
     this.io.emit(SocketEvent.AddUser, this.username);
